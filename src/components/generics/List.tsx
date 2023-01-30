@@ -1,7 +1,7 @@
 import React from 'react'
 type ListProps<T> = {
     items: T[]
-    onClick: (value:T) =>void
+    onClick: (value:T) => void
 }
 
 
@@ -14,9 +14,10 @@ function List<T extends {id:number}>({items, onClick}: ListProps<T>) {
 
 {
     items.map(( item, index) =>{
+        console.log(item)
+        console.log(item.id)
         return (
             <div key={item.id} onClick={() => onClick(item)}>
-            {item}
             </div>
         )
     })

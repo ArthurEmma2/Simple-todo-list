@@ -106,7 +106,7 @@ function App() {
     onClick={((item) => console.log(item))}
     
     /> */}
-    <List 
+    {/* <List 
     items={[
      {
       id: 1,
@@ -127,7 +127,7 @@ function App() {
 
     onClick={((item) => console.log(item))}
     
-    />
+    /> */}
 
 
     </div>
